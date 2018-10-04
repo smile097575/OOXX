@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class MainFrame extends JFrame {
+public class ox extends JFrame {
     Container cp;
     private JButton jbtn1 = new JButton();
     private JButton jbtn2 = new JButton();
@@ -18,7 +18,7 @@ public class MainFrame extends JFrame {
     private JPanel jpan= new JPanel(new GridLayout(3,3,3,3));
     private int x = 0;
 
-    public MainFrame() {
+    public ox() {
         ex1();
     }
 
@@ -174,6 +174,12 @@ public class MainFrame extends JFrame {
 
     }
     private void check(){
-        if (jbtn1.getText().equals(jbtn2.getText())&&jbtn2.getText().equals(jbtn3.getText())&&!);
+        if (jbtn1.getText().equals(jbtn2.getText())&&jbtn2.getText().equals(jbtn3.getText())&&!jbtn1.getText().equals("0")){
+         if (jbtn1.getText().equals(0)){
+             jlb1.setText("player1 win");
+         }else {
+             jlb1.setText("player2 win");
+         }
+        }
     }
 }
